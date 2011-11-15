@@ -81,6 +81,7 @@
 		<event-handler event="landing" access="public">
 			<view-page name="landing"/>
 		</event-handler>
+
 		
 		<!-- sample event handler that uses caching and the default cache (data cached for 1 hour in application scope) -->
 		<!--
@@ -114,7 +115,7 @@
 	<!-- PAGE-VIEWS -->
 	<page-views>
 		<page-view name="home" page="/views/home.cfm" />
-		<page-view name="landing" page="/views/landing.cfm"
+		<page-view name="landing" page="/views/landing.cfm"/>
 		<page-view name="exception" page="/views/exception.cfm" />
 	</page-views>
 	

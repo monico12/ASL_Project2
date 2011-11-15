@@ -3,35 +3,9 @@
 		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<!-- css -->
-		
+		<link rel="stylesheet" href="css/main.css"/>
 		<!-- javascript -->
-		
-		<style>
-			body{
-				width: 960px;
-				margin: 0 auto;
-			}
-			#loginform{
-				float:right;
-			}
-			#header{
-				height: 60px;
-				background-color: black;
-			}
-			#signupform{
-				float: right;
-				text-align: right;
-				width: 300px;
-				border: 1px solid black;
-			}
-			
-			#leftcontent{
-				height: 200px;
-				width: 600px;
-				float: left;
-				border: 1px solid black;
-			}
-		</style>
+
 	</head>
 	
 	<body>
@@ -58,7 +32,7 @@
 						<p><input id="signup" name="signup" type="submit" value="Sign Up"/></p>
 					</div><!-- closes signupform -->
 				</div><!-- closes content -->
-				
+
 			</div><!-- closes wrapper -->
 		</body>
 	</html>

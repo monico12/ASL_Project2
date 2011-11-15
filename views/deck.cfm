@@ -23,14 +23,17 @@
 			</div><!-- closes nav -->
 
 			<div id="content">
+				<!-- search form -->
 				<div id="leftcol">
 
 				</div><!-- closes leftcol -->
 
+				<!-- list of decks from search -->
 				<div id="centercol">
 
 				</div><!-- closes centercol -->
-
+				
+				<!-- deck details -->
 				<div id="rightcol">
 					
 				</div><!-- closes rightcol -->

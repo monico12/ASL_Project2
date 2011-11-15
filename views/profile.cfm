@@ -23,14 +23,12 @@
 			</div><!-- closes nav -->
 
 			<div id="content">
+				<!-- has search form and list of profiles -->
 				<div id="leftcol">
-
+					
 				</div><!-- closes leftcol -->
 
-				<div id="centercol">
-
-				</div><!-- closes centercol -->
-
+				<!-- displays the selected profile -->
 				<div id="rightcol">
 					
 				</div><!-- closes rightcol -->

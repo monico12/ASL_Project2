@@ -1,13 +1,5 @@
-<cfsilent>
-	<cfset variables.coldSpringWorks = false />
-	<cfset variables.csProp = getProperty("coldSpringProperty")>
-	<cfif IsStruct(variables.csProp)>
-		<cfset variables.beanFactory = getProperty(variables.csProp.getParameter("beanFactoryPropertyName")) />
-		<cfif IsStruct(variables.beanFactory) AND StructKeyExists(variables.beanFactory, "getBean" )>
-			<cfset variables.coldSpringWorks = true />
-		</cfif>
-	</cfif>
-</cfsilent>
+
+
 <cfoutput>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

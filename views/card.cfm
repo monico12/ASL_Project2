@@ -23,14 +23,17 @@
 			</div><!-- closes nav -->
 
 			<div id="content">
+				<!-- search form -->
 				<div id="leftcol">
 
 				</div><!-- closes leftcol -->
 
+				<!-- card image -->
 				<div id="centercol">
 
 				</div><!-- closes centercol -->
-
+				
+				<!-- card details -->
 				<div id="rightcol">
 					
 				</div><!-- closes rightcol -->
