@@ -12,7 +12,7 @@
 	<!-- PROPERTIES -->
 	<properties>
 		<property name="applicationRoot" value="/ASL_Project2" />
-		<property name="defaultEvent" value="home" />
+		<property name="defaultEvent" value="landing" />
 		<property name="eventParameter" value="event" />
 		<property name="parameterPrecedence" value="form" />
 		<property name="maxEvents" value="10" />

@@ -1,0 +1,142 @@
+/*----------------------- =Reset= -----------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*----------------------- =General= -----------------------*/
+body{
+	width: 960px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #E8E6ED;
+}
+
+
+/*----------------------- =Landing Header= -----------------------*/	
+#loginform{
+	float:right;
+	margin: 15px 15px 15px 0;
+}
+
+#loginform input{
+	height: 30px;
+	width: 150px;
+
+}
+
+#loginform #login{
+	width: 100px;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #668e59;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#e8e6ed 0%,
+		#939296);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e8e6ed),
+		to(#939296));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 3px solid #668e59;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);
+}
+	
+#header{
+	height: 60px;
+	background-color: #4b4a4c;
+}
+
+/*----------------------- =Landing Content= -----------------------*/
+#content{
+	margin-top: 10px;
+	height: 300px;
+	color: #668e59;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#e8e6ed 0%,
+		#939296);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e8e6ed),
+		to(#939296));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 3px solid #668e59;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+#signupform{
+	float: right;
+	text-align: right;
+	width: 300px;
+	border: 1px solid black;
+}
+	
+#leftcontent{
+	height: 200px;
+	width: 600px;
+	float: left;
+	border: 1px solid black;
+}
+
+#signupform{
+	text-align: center;
+
+}
+
+#signupform p{
+	margin-top: 10px;
+}
+/*----------------------- =Home, Profile, Deck, Card Header= -----------------------*/
+
+
+
+
+/*----------------------- =Home Content= -----------------------*/
+
+/*----------------------- =Profile Content= -----------------------*/
+
+/*----------------------- =Deck Content= -----------------------*/
+
+/*----------------------- =Card Content= -----------------------*/
+
