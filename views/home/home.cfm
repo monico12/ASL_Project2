@@ -22,7 +22,7 @@
 			<div id="content">
 				<div id="leftcol">
 					<ul>
-						<cfloop query="userList"><li>#id#</li></cfloop>
+						<cfloop query="userList"><li>#username#</li></cfloop>
 					<ul>	
 				</div><!-- closes leftcol -->
 

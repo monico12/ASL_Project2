@@ -71,11 +71,17 @@
 
 	<!-- EVENT-HANDLERS -->
 	<event-handlers>
+		<!-- event handler that logs in users/redirect failed logins to landing -->
+		<event-handler event="loginEvent" access="public">
+			<event-mapping event="loginSucceeded" mapping="home"/>
+			<event-mapping event="loginFailed" mapping="landing"/>
+			<notify listener="LoginListener" method="login"/>
+		</event-handler>
+
 		<event-handler event="home" access="public">
 			<!--<notify listener="SampleListener" method="sampleFunction"/>-->
 			<notify listener="UserGateway" method="getAll" resultArg="users"/>
 			<view-page name="home.home" />
-
 		</event-handler>
 
 		<event-handler event="landing" access="public">
