@@ -1,8 +1,9 @@
 <cfcomponent
 	displayname="SampleListener"
 	extends="MachII.framework.Listener"
-	output="false"
+	output="true"
 	hint="A simple listener example.">
+
 
 	<!---
 	PROPERTIES
@@ -19,9 +20,11 @@
 	<!---
 	PUBLIC FUNCTIONS
 	--->
-	<cffunction name="sampleFunction" output="false" access="public" returntype="void"
+	<cffunction name="sampleFunction" output="true" access="public" returntype="void"
 		hint="I am a boilerplate function">
 		<cfargument name="event" type="MachII.framework.Event" required="true" />
+		<cfset name="monico"/>
+		<cfoutput>#name#</cfoutput>
 		<!--- Put logic here. --->
 	</cffunction>
 

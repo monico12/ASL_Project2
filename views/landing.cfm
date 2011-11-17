@@ -3,7 +3,7 @@
 		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="stylesheet" type="text/css" href="#getProperty('stylePath')#/main.css"/>
 		<!-- javascript -->
 
 	</head>

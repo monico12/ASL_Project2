@@ -17,7 +17,8 @@
 		<property name="parameterPrecedence" value="form" />
 		<property name="maxEvents" value="10" />
 		<property name="exceptionEvent" value="exception" />
-		
+		<property name="stylePath" value="library/css"/>
+
 		<!-- CACHING RELATED -->
 		<!-- this will create an unnamed cache that caches data for 1 hour in the application scope -->
 		<!-- <property name="caching" type="MachII.caching.CachingProperty" /> -->
@@ -29,13 +30,9 @@
 
 	<!-- LISTENERS -->
 	<listeners>
-		<!--
-		<listener name="yourListenerName" type="fully.Qualified.Dot.Delimited.Path.To.CFC">
-			<parameters>
-				<parameter name="yourParameterName" value="yourParameterValue" />
-			</parameters>
-		</listener>
-		-->
+		
+		<listener name="SampleListener" type="listeners.SampleListener" />
+		<listener name="UserGateway" type="listeners.UserGateway" />
 		
 	</listeners>
 	
@@ -75,12 +72,30 @@
 	<!-- EVENT-HANDLERS -->
 	<event-handlers>
 		<event-handler event="home" access="public">
-			<!-- <notify listener="SomeListener" method="doSomething" resultArg="resultOfSomething" />  -->
-			<view-page name="home" />
+			<!--<notify listener="SampleListener" method="sampleFunction"/>-->
+			<notify listener="UserGateway" method="getAll" resultArg="users"/>
+			<view-page name="home.home" />
+
 		</event-handler>
 
 		<event-handler event="landing" access="public">
 			<view-page name="landing"/>
+		</event-handler>
+
+		<event-handler event="test" access="public">
+			<view-page name="landing.test"/>
+		</event-handler>
+		
+		<event-handler event="card" access="public">
+			<view-page name="home.card"/>
+		</event-handler>
+
+		<event-handler event="deck" access="public">
+			<view-page name="home.deck"/>
+		</event-handler>
+
+		<event-handler event="profile" access="public">
+			<view-page name="home.profile"/>
 		</event-handler>
 
 		
@@ -115,9 +130,18 @@
 	
 	<!-- PAGE-VIEWS -->
 	<page-views>
-		<page-view name="home" page="/views/home.cfm" />
+		<!--<page-view name="home" page="/views/home.cfm" />
 		<page-view name="landing" page="/views/landing.cfm"/>
 		<page-view name="exception" page="/views/exception.cfm" />
+		-->
+		<view-loader type="MachII.framework.viewloaders.PatternViewLoader">
+			<parameters>
+				<parameter name="pattern" value="/views/**/*.cfm"/>
+				<parameter name="throwIfNoMatches" value="true"/>
+			</parameters>
+		</view-loader>
 	</page-views>
+
+
 	
 </mach-ii>

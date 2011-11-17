@@ -1,18 +1,17 @@
-<cfcomponent
-     displayname="UserGateway"
-     extends="MachII.framework.Listener"
-     output="false"
+
+<cfcomponent extends="MachII.framework.Listener" displayname="UserGateway" output="true">
 
     <!--- getAll function returns all the users in ssl_users table from server --->
     <cffunction name="getAll" access="public" returntype="query" hint="returns all items as a query">
 
-        <cfquery datasource="#variables.dsn#" name="local.users">
-            SELECT userId as id, lastname, firstname, password, email, username FROM project2.users
+        <cfquery datasource="project2" name="local.users">
+            SELECT id, lastname, firstname, password, username FROM project2.users
         </cfquery>
-        <cfreturn local.users>
+        <!--<cfreturn local.users>-->
+        <cfoutput query="local.users">#username#</cfoutput>
     </cffunction>
 
-    <!--- getByUserId function returns --->
+    <!--- getByUserId function returns --->         
     <cffunction name="getByUserId" access="public" returntype="query" hint="returns user by Id">
         <cfargument name="id" type="numeric" required="true">
         <cfquery datasource="#variables.dsn#" name="local.users">
